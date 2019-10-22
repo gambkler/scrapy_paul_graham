@@ -19,3 +19,12 @@ save original html and cleaned article
 8. highlight `<a>`
 9. remove all `<element>`, expect elements: font, a, br, b
 10. html.escape, html.unescape
+
+```
+scrapy shell http://www.paulgraham.com/articles.html
+scrapy startproject paulgraham
+scrapy genspider test paulgraham.com
+scrapy crawl test
+scrapy crawl test -s CLOSESPIDER_ITEMCOUNT=3
+scrapy crawl basic -o items.jl
+```
