@@ -2,3 +2,10 @@
 env
 __pycache__
 *.pyc
+*.aux
+*.log
+*.tex
+*.pdf
+*.tex
+*.toc
+
