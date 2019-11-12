@@ -52,6 +52,7 @@ with open('./items.jl') as f:
         })
 
 articles.sort(key=lambda x: x['num'])
+articles.reverse()
 
 doc = Doc()
 for a in articles:
